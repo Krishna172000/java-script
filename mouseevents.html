@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width:250px;
+            height: 200px;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <button id="my button">click me</button>
+    <p id="click">click</p>
+    <p id="dblclick">doubleclick</p>
+    <p id="mousedown">mousedown</p>
+    <p id="mouseup">mouseup</p>
+    <p id="mousemove">mousemove</p>
+    <p id="mouseecenter">mousecenter</p>
+    <p id="mouselevel">mouselevel</p>
+
+    <script>
+     let click=document.getElementById('click');
+     click.addEventListener('click',function() {
+        console.log('click event triggered')
+     });
+    //  double click
+
+     let dblclick=document.getElementById('dblclick');
+     dblclick.addEventListener('dblclick',function() {
+        console.log('dblclick event triggered')
+     });
+    //  mousedown
+    let mousedown=document.getElementById('mousedown');
+     mousedown.addEventListener('mousedown',function() {
+        console.log('mousedown event triggered')
+     });
+
+    //  mouseup
+    let mouseup=document.getElementById('mouseup');
+     mouseup.addEventListener('mouseup',function() {
+        console.log('mouseup event triggered')
+     });
+    //  mousemove
+    let mousemove=document.getElementById('mousemove');
+     mouseup.addEventListener('mousemove',function() {
+        console.log('mousemove event triggered')
+     });
+    //  mousecenter
+    let mouseecenter=document.getElementById('mouseecenter');
+    mouseecenter.addEventListener('mousecenter',function() {
+        console.log('mousecenter event triggered')
+     });
+    //  mouselevel
+    let mouselevel=document.getElementById('mouselevel');
+     mouselevel.addEventListener('mouselevel',function() {
+        console.log('mouselevel event triggered')
+    });
+
+
+
+     
+    </script>
+
+     
+</body>
+</html>
